@@ -1,0 +1,33 @@
+@font-face { font-family: 'poppins'; src: url('./Poppins-Medium.ttf'); }
+* { font-family: poppins; color: white; padding: 0; margin: 0; font-size: 1rem; }
+h1 { font-size: 2rem; }
+html { background-color: rgb(58, 3, 160); background-image: radial-gradient(at 90% 79%, hsla(189, 100%, 50%, 1) 0px, transparent 50%), radial-gradient(at 0% 79%, rgba(255, 0, 212, 0.688) 0px, transparent 50%); }
+
+body { padding: 0; margin: 0 }
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #231F20 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('unity-logo-light.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-light.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-light.png') no-repeat center }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+
+#unity-logo { -webkit-filter: drop-shadow(0 0x 100% #aaaaaa33); filter: drop-shadow(0 0 10px #aaaaaa33); }
+#unity-progress-bar-empty { border-radius: 1rem; background: rgba(255, 255, 255, 0.2); border: 2px solid rgba(255, 255, 255, 0.5); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); }
+#unity-progress { text-align: center; }
+#unity-progress-bar-full { border-radius: 1rem; -webkit-mask:linear-gradient(#fff 0 0); mask:linear-gradient(#fff 0 0); margin-top: 0; }
+#unity-progress-bar-full::before { content:""; position:absolute; inset: 0; background-size: 141px 100%; background: rgb(0,157,255); background: linear-gradient(90deg, rgba(0,157,255,1) 0%, rgba(255,0,234,1) 100%); }
+
+.ctaDiv > div { display: flex; flex-direction: column; align-items: center; padding: 1rem !important; border-radius: 1.5rem !important; gap: 0.5rem; }
+.ctaDiv div, select, button { color: #000; padding: 0.2rem; background: rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.18); }
+
+#debugImageTarget { width: 500px !important; }
